@@ -1,15 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<title>demonstration page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兰可的个人主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #2932e1;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .intro, .portfolio, .contact {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2932e1;
+        }
+        .portfolio img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2932e1;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-<image src="./res/lanke.jpg"
-	width="350"
-	height="400">
-<h1>阿伟还在干拉</h1>
-<p>Click 
-	<a href="https://www.xuexi.cn/">here
-	</a>
-for another page.</p>
+    <header>
+        <h1>兰可的个人主页</h1>
+    </header>
+    <div class="container">
+        <section class="intro">
+            <h2>关于我</h2>
+            <p>你好，我是兰可，一名在读研究生。我对科研和创新有着浓厚的兴趣，擅长数据分析和编程。欢迎来到我的个人主页。</p>
+        </section>
+        <section class="portfolio">
+            <h2>作品集</h2>
+            <div class="work">
+                <h3>作品1</h3>
+                <img src="res/lanke.jpg" alt="作品1">
+                <p>作品1的描述。</p>
+            </div>
+            <div class="work">
+                <h3>作品2</h3>
+                <img src="res/lanke.jpg" alt="作品2">
+                <p>作品2的描述。</p>
+            </div>
+            <!-- 添加更多作品 -->
+        </section>
+        <section class="contact">
+            <h2>联系方式</h2>
+            <p>你可以通过以下方式联系我：</p>
+            <ul>
+                <li>Email: example@example.com</li>
+                <li>电话: 123-456-7890</li>
+                <!-- 添加更多联系方式 -->
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 兰可. 保留所有权利。</p>
+    </footer>
 </body>
 </html>
